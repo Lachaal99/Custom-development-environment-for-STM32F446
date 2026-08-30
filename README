@@ -1,0 +1,39 @@
+# STM32F446 Bare-Metal Starter Template
+
+A lightweight, zero-HAL C project template for developing embedded firmware on the STM32F446 (ARM Cortex-M4) microcontroller. Designed as a clean starting point for bare-metal projects using GNU toolchains and OpenOCD.
+
+## Features
+* **Zero HAL / Direct Register Access:** Pure CMSIS-based target headers (`inc/`) and lightweight peripheral drivers (`src/rcc.c`).
+* **Custom Startup & Linker Script:** Bare-metal startup assembly (`startup/`) and explicit memory layout management (`linker_script.ld`).
+* **Automated Build & Flash:** Pre-configured `Makefile` for compiling, generating ELF/HEX outputs, and programming via OpenOCD.
+
+## Prerequisites
+Ensure the following tools are installed in your environment (Linux/WSL):
+* `arm-none-eabi-gcc` toolchain
+* `make`
+* `openocd` (with debug probe pass-through configured)
+
+## Repository Structure
+
+.
+├── inc/                # CMSIS core & STM32F446 register definitions
+├── src/                # Application code and drivers
+├── startup/            # Core vector table and initialization assembly
+├── build/              # Generated target outputs (.elf, .hex)
+├── obj/                # Compiled object files (.o)
+├── linker_script.ld    # Flash and RAM memory configuration
+└── Makefile            # Build and flash instructions
+
+1. **Clone/Template:**
+   ```bash
+   git clone [https://github.com/](https://github.com/)<your-username>/<repo-name>.git my-new-project
+   cd my-new-project
+
+Build Firmware: 
+    make
+
+Flash to target MCU:
+    make flash
+
+Clean build directory:
+    make clean
