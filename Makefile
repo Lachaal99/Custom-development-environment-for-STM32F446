@@ -1,6 +1,7 @@
 TARGET = app
 
-CFLAGS = -mcpu=cortex-m4 -mthumb -O2 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -Wextra
+CFLAGS = -mcpu=cortex-m4 -mthumb -Og -g3 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -Wextra
+
 INC = -Iinc
 LDFLAGS = -nostdlib -T linker_script.ld
 PREFIX = arm-none-eabi-

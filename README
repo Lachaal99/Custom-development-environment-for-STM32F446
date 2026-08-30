@@ -26,7 +26,7 @@ Ensure the following tools are installed in your environment (Linux/WSL):
 
 1. **Clone/Template:**
    ```bash
-   git clone [https://github.com/](https://github.com/)<your-username>/<repo-name>.git my-new-project
+   git clone [https://github.com/] github link my-new-project
    cd my-new-project
 
 Build Firmware: 
