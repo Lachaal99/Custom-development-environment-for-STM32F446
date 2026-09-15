@@ -26,8 +26,8 @@ Ensure the following tools are installed in your environment (Linux/WSL):
 
 1. **Clone/Template:**
    ```bash
-   git clone [https://github.com/] github link my-new-project
-   cd my-new-project
+   git clone https://github.com/Lachaal99/Custom-development-environment-for-STM32F446.git
+   cd Custom-development-environment-for-STM32F446
 
 Build Firmware: 
     make
